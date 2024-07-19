@@ -1,0 +1,184 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+    color: #14171a;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #e1e8ed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #1da1f2;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #1991db;
+}
+
+.sidebar button#profileBtn {
+    background-color: #ffffff; /* Fond blanc */
+    color: #000000; /* Texte noir */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #e1e8ed; /* Bordure pour le bouton */
+}
+
+.sidebar button#profileBtn:hover {
+    background-color: #f5f8fa; /* Fond légèrement gris clair au survol */
+    color: #1da1f2; /* Couleur du texte au survol */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+#postForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1991db;
+}
+
+.hidden {
+    display: none;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#likeCount {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #14171a;
+}
+
+#likeBtn, #commentBtn {
+    margin-left: 10px;
+}
+
+#battleRoyale {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#battleRoyale h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #14171a;
+}
+
+#keywordInput {
+    width: calc(100% - 22px);
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addKeywordBtn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addKeywordBtn:hover {
+    background-color: #1991db;
+}
+
+#keywordList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#keywordList li {
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#userStatus {
+    margin-top: 10px;
+}

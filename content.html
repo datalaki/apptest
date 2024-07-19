@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contenu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1>TweetMe</h1>
+            <nav>
+                <ul>
+                    <li><button id="postBtn">+</button></li>
+                    <li><button id="profileBtn">Mon Profil</button></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div id="postForm" class="hidden">
+                <h2>Écrire un Tweet</h2>
+                <textarea id="postText" placeholder="Quoi de neuf ?" required></textarea>
+                <div class="post-actions">
+                    <button id="cancelPost">Annuler</button>
+                    <span id="likeCount">0</span>
+                    <button id="likeBtn">J'aime</button>
+                    <button id="commentBtn">Commenter</button>
+                </div>
+            </div>
+            <div id="contentList"></div>
+            <!-- Battle Royale Section -->
+            <div id="battleRoyale">
+                <h2>Battle Royale</h2>
+                <div id="userStatus"></div>
+                <input type="text" id="keywordInput" placeholder="Mot à bannir" />
+                <button id="addKeywordBtn">Ajouter Mot</button>
+                <ul id="keywordList"></ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription / Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div id="signupForm" class="auth-form">
+            <h2>Inscription</h2>
+            <input type="text" id="signupUsername" placeholder="Nom d'utilisateur" required>
+            <input type="password" id="signupPassword" placeholder="Mot de passe" required>
+            <button id="signupButton">S'inscrire</button>
+            <p id="signupMessage"></p>
+            <button id="showLoginForm">Déjà un compte ? Connexion</button>
+        </div>
+        <div id="loginForm" class="auth-form hidden">
+            <h2>Connexion</h2>
+            <input type="text" id="loginUsername" placeholder="Nom d'utilisateur" required>
+            <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            <button id="loginButton">Se connecter</button>
+            <p id="loginMessage"></p>
+            <button id="showSignupForm">Pas de compte ? Inscription</button>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
